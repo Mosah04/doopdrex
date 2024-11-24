@@ -8,8 +8,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#0d0713",
+        foreground: "#efeaf5",
+        primary: "#6317b5",
+        secondary: "#4d207e",
+        accent: "#8231d8",
+        tertiary: "#1dbcc2",
+      },
+      fontFamily: {
+        mont: ["var(--font-montserrat)"],
       },
     },
   },

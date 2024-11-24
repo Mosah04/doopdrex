@@ -2,20 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html {
+  --text: #efeaf5;
+  --background: #0d0713;
+  --primary: #6317b5;
+  --secondary: #4d207e;
+  --accent: #8231d8;
+  --tertiary: #1dbcc2;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.bg-gradient-to-bra {
+  background: linear-gradient(
+    180deg,
+    transparent 60%,
+    rgba(151, 74, 232, 0.3) 100%
+  );
+}
+
+.shadow-divider {
+  box-shadow: 0 -10px 15px -10px rgba(151, 74, 232, 0.5);
+}
+
+.cards:hover > .card > .card-border {
+  opacity: 1;
+}
+
+.card {
+  position: relative;
+}
+.card:hover::before {
+  opacity: 1;
+}
+.card::before,
+.card > .card-border {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 500ms;
+  top: 0px;
+  width: 100%;
+}
+
+.card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y),
+    rgba(151, 74, 232, 0.08),
+    transparent 40%
+  );
+  z-index: 3;
+}
+.card > .card-border {
+  background: radial-gradient(
+    400px circle at var(--mouse-x) var(--mouse-y),
+    rgba(151, 74, 232, 0.3),
+    transparent 40%
+  );
+  z-index: 1;
+}
+.card > .card-content {
+  background-color: var(--background);
+  border-radius: inherit;
+  height: calc(100% - 2px);
+  margin: 1px;
+  width: calc(100% - 2px);
+  position: relative;
+  z-index: 2;
 }
