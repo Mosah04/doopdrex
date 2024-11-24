@@ -16,10 +16,10 @@ import MorphGlass from "@/components/MorphGlass";
 export default function Home() {
   return (
     <div className="relative container px-2 space-y-24">
-      <section className="flex flex-col items-center justify-center gap-4 min-h-[50vh] bg-[url('../../public/bg-shape.svg')] bg-center bg-no-repeat bg-cover py-8">
+      <section className="flex flex-col items-center justify-center gap-4 min-h-[60vh] bg-[url('../../public/bg-shape.svg')] bg-center bg-no-repeat bg-cover py-8">
         <h1 className="font-bold text-5xl md:text-7xl text-center">
-          Transformez votre{" "}
-          <span className="text-accent">vision digitale </span>
+          Transformez votre
+          <span className="text-accent"> vision digitale </span>
           avec <span className="text-tertiary">DoopDrex </span>
         </h1>
         <p className="text-center font-semibold">
