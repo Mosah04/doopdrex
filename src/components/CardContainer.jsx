@@ -6,7 +6,6 @@ const CardContainer = ({ children }) => {
 
   const handleMouseMove = (e) => {
     const children = containerRef.current.children;
-    console.log(children);
     for (const card of children) {
       const rect = card.getBoundingClientRect();
       const x = e.clientX - rect.left;

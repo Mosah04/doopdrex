@@ -4,7 +4,7 @@ const Card = ({ title, children, icon }) => {
       <div className="card-border"></div>
       <div className="p-6 card-content space-y-4 text-sm justify-items-center">
         {icon}
-        <h2 className="font-bold text-2xl">{title}</h2>
+        <h2 className="font-bold text-xl">{title}</h2>
         {children}
       </div>
     </div>

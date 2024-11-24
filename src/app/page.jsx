@@ -15,11 +15,12 @@ import MorphGlass from "@/components/MorphGlass";
 
 export default function Home() {
   return (
-    <div className="relative container px-2 py-12 space-y-24">
-      <section className="flex flex-col items-center justify-center gap-4 min-h-[50vh] bg-[url('../../public/bg-shape.svg')] bg-center bg-no-repeat bg-cover">
-        <h1 className="font-bold text-5xl md:text-8xl text-center">
-          Transformez votre <span className="text-accent">vision </span>
-          <span className="text-tertiary">digitale </span>avec DoopDrex
+    <div className="relative container px-2 space-y-24">
+      <section className="flex flex-col items-center justify-center gap-4 min-h-[50vh] bg-[url('../../public/bg-shape.svg')] bg-center bg-no-repeat bg-cover py-8">
+        <h1 className="font-bold text-5xl md:text-7xl text-center">
+          Transformez votre{" "}
+          <span className="text-accent">vision digitale </span>
+          avec <span className="text-tertiary">DoopDrex </span>
         </h1>
         <p className="text-center font-semibold">
           Votre partenaire en création numérique, de la stratégie au
@@ -33,11 +34,15 @@ export default function Home() {
       </section>
       <section>
         <article className="relative overflow-hidden">
-          <div className="relative max-w-7xl mx-auto px-6 md:px-12">
+          <div className="relative max-w-7xl mx-auto px-6 md:px-12 space-y-8">
             {/* Section Title */}
-            <h1 className="text-center font-extrabold text-2xl text-accent mb-8">
+            <h1 className="text-center font-extrabold text-accent">
               DoopDrex, qui sommes-nous ?
             </h1>
+            <p className="font-bold text-2xl text-center">
+              Agence digitale experte en création de solutions web, mobiles et
+              en intégration de technologies d’intelligence artificielle.
+            </p>
 
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               {/* Left Illustration */}

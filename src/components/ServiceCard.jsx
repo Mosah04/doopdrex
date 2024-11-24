@@ -11,7 +11,7 @@ const ServiceCard = ({ title, description, number, imgURL }) => {
         className="w-full h-full rounded-[inherit] object-cover"
         src={imgURL}
       />
-      <div className="absolute rounded-b-[inherit] left-0 bottom-0 w-full bg-gradient-to-b from-transparent to-secondary group-hover:bg-secondary/50 transition-all duration-300 p-2">
+      <div className="absolute rounded-b-[inherit] left-0 bottom-0 w-full bg-gradient-to-b from-transparent to-secondary group-hover:from-0% group-hover:pt-12 transition-all duration-300 p-2">
         <span className="font-bold text-xl text-tertiary">{number}</span>
         <h2 className="font-bold text-xl">{title}</h2>
         <div className="opacity-0 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-96 transition-all duration-500 flex flex-col gap-2">

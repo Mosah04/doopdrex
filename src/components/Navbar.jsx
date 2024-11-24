@@ -55,7 +55,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex justify-between items-center p-2 container">
+    <nav className="flex justify-between items-center px-2 py-4 container">
       <Link href={"/"} className="font-bold text-xl flex items-center gap-2">
         <Image src={"/logo.svg"} width={30} height={30} alt="Logo" />
         <span>DoopDrex</span>
