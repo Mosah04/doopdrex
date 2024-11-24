@@ -70,12 +70,15 @@ const Footer = () => {
         </div>
         <div className="flex gap-4 items-center text-accent text-lg max-sm:w-full max-sm:justify-center">
           <Link href={"#"}>
+            <span className="sr-only">Go to Facebook</span>
             <FaFacebookF />
           </Link>
           <Link href={"#"}>
+            <span className="sr-only">Go to LinkedIn</span>
             <FaLinkedinIn />
           </Link>
           <Link href={"#"}>
+            <span className="sr-only">Go to Instagram</span>
             <FaInstagram />
           </Link>
         </div>
