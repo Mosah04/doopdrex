@@ -10,9 +10,10 @@ const montSerrat = Montserrat({
 });
 
 export const metadata = {
-  title: "Doopdrex",
+  title:
+    "Développement Web & IA - Doopdrex, Experts en React Native, NextJS et Laravel",
   description:
-    "DoopDrex est une agence digitale experte en création de solutions web, mobiles et en intégration de technologies d’intelligence artificielle. Nous accompagnons les entreprises de toutes tailles pour transformer leurs ambitions numériques en réalités performantes et innovantes.",
+    "Découvrez Doopdrex, une agence spécialisée en création de sites web modernes et en intégration de l'intelligence artificielle. Contactez-nous pour vos projets numériques.",
 };
 
 export default function RootLayout({ children }) {
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
       >
         <div className="overflow-hidden flex flex-col min-h-screen sm:items-center">
           <Navbar />
-          <main className="flex-grow">{children}</main>
+          <main className="flex-grow container">{children}</main>
           <Footer />
         </div>
 

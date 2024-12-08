@@ -10,12 +10,13 @@ import { MdOutlineHomeRepairService } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import ServiceCard from "@/components/ServiceCard";
 import CTAButton from "@/components/CTAButton";
-import SimpleButton from "@/components/SimpleButton";
+
 import MorphGlass from "@/components/MorphGlass";
+import CallSection from "@/components/CallSection";
 
 export default function Home() {
   return (
-    <div className="relative container px-2 space-y-24">
+    <div className="px-2 space-y-24">
       <section className="flex flex-col items-center justify-center gap-4 min-h-[60vh] bg-[url('../../public/bg-shape.svg')] bg-center bg-no-repeat bg-cover py-8">
         <h1 className="font-bold text-5xl md:text-7xl text-center">
           Transformez votre
@@ -201,22 +202,7 @@ export default function Home() {
           />
         </article>
       </section>
-      <section className="relative px-6 lg:px-56 py-6 rounded-xl place-content-center text-center min-h-[40vh]">
-        <div className="absolute top-0 left-0 rounded-[inherit] bg-[url('../../public/backFoot.svg')] bg-no-repeat bg-center bg-cover bg-opacity-0 h-full w-full opacity-45 -z-10" />
-        <div className="p-6 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10 rounded-lg shadow-lg space-y-4">
-          <span className="text-2xl font-bold">
-            Vous avez un projet en tête?
-          </span>
-          <p className="leading-relaxed">
-            Contactez-nous dès aujourd&apos;hui pour une consultation
-            personnalisée et découvrez comment DoopDrex peut transformer vos
-            idées en succès digital. Nous sommes prêts à discuter de vos besoins
-            et à vous proposer des solutions sur mesure pour faire de votre
-            vision une réalité.
-          </p>
-          <SimpleButton>Contactez-nous</SimpleButton>
-        </div>
-      </section>
+      <CallSection />
     </div>
   );
 }

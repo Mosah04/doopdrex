@@ -74,7 +74,9 @@ const Navbar = () => {
             key={index}
             href={item.href}
             ref={(el) => (navLinksRef.current[index] = el)}
-            className={`p-1 ${pathName === item.href ? "font-bold" : ""}`}
+            className={`p-1 transition-[font-weight] duration-500 ${
+              pathName === item.href ? "font-bold" : ""
+            }`}
           >
             {item.label}
           </Link>
