@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://votre-projet.vercel.app/sitemap.xml
+Sitemap: https://doopdrex.vercel.app/sitemap.xml
