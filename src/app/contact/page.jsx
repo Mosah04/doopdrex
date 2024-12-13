@@ -1,8 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { TiArrowRightOutline } from "react-icons/ti";
-import { FaPhoneAlt } from "react-icons/fa";
-import { IoIosMail } from "react-icons/io";
 import { MdLocalPhone } from "react-icons/md";
 import { HiMail } from "react-icons/hi";
 import Image from "next/image";
@@ -31,7 +29,10 @@ const Contact = () => {
         </div>
       </section>
       <section className="flex gap-8 flex-wrap justify-center">
-        <div className="px-12 py-4 place-content-center justify-center rounded-xl border border-foreground/50 hover:border-primary/50 transition-colors duration-300 w-fit space-y-4 group">
+        <a
+          href="tel:+2290158700480"
+          className="px-12 py-4 place-content-center justify-center rounded-xl border border-foreground/50 hover:border-primary/50 transition-colors duration-300 w-fit space-y-4 group"
+        >
           <div className="justify-self-center p-4 border border-primary rounded-full group-hover:bg-primary transition-colors duration-300 text-3xl">
             <MdLocalPhone />
           </div>
@@ -39,8 +40,11 @@ const Contact = () => {
             <p className="text-accent font-bold mb-1">Phone number</p>
             <p>+229 01 58 70 04 80</p>
           </div>
-        </div>
-        <div className="px-12 py-4 place-content-center justify-center rounded-xl border border-foreground/50 hover:border-primary/50 transition-colors duration-300 w-fit space-y-4 group">
+        </a>
+        <a
+          href="mailto:contact@doopdrex.onverrabien"
+          className="px-12 py-4 place-content-center justify-center rounded-xl border border-foreground/50 hover:border-primary/50 transition-colors duration-300 w-fit space-y-4 group"
+        >
           <div className="justify-self-center p-4 border border-primary rounded-full group-hover:bg-primary transition-colors duration-300 text-3xl">
             <HiMail />
           </div>
@@ -48,7 +52,7 @@ const Contact = () => {
             <p className="text-accent font-bold mb-1">Email</p>
             <p>contact@doopdrex.onverrabien</p>
           </div>
-        </div>
+        </a>
       </section>
       <section>
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
@@ -64,18 +68,6 @@ const Contact = () => {
               Notre équipe est là pour répondre à vos questions et concrétiser
               vos idées. N’hésitez pas à nous écrire ou à nous appeler !
             </p>
-            <div className="space-y-2">
-              <p className="flex gap-2 items-center">
-                <MdLocalPhone className="text-2xl text-accent" />
-                <a href="tel:+2290158700480">+229 01 58 70 04 80</a>
-              </p>
-              <p className="flex gap-2 items-center">
-                <HiMail className="text-2xl text-accent" />
-                <a href="mailto:contact@doopdrex.onverrabien">
-                  contact@doopdrex.onverrabien
-                </a>
-              </p>
-            </div>
           </div>
           <div className="flex-1 space-y-6">
             <input

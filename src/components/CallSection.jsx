@@ -7,11 +7,11 @@ const CallSection = () => {
       <div className="p-6 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-10 rounded-lg shadow-lg space-y-4">
         <span className="text-2xl font-bold">Vous avez un projet en tête?</span>
         <p className="leading-relaxed">
-          Contactez-nous dès aujourd&apos;hui pour une consultation
-          personnalisée et découvrez comment DoopDrex peut transformer vos idées
-          en succès digital. Nous sommes prêts à discuter de vos besoins et à
-          vous proposer des solutions sur mesure pour faire de votre vision une
-          réalité.
+          Contactez-nous dès aujourd&apos;hui pour une consultation totalement
+          gratuite et personnalisée et découvrez comment DoopDrex peut
+          transformer vos idées en succès digital. Nous sommes prêts à discuter
+          de vos besoins et à vous proposer des solutions sur mesure pour faire
+          de votre vision une réalité.
         </p>
         <SimpleButton>Contactez-nous</SimpleButton>
       </div>
